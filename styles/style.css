@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200..700&display=swap');
+
+body{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    background-color: #757575;
+    background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
+}
+
+header {
+    background-color: #772b31;
+    color: rgb(219, 219, 219);
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header_image{
+    margin-left: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #772b31;
+    font-size: 30px;
+    border-radius: 5px;
+}
+
+nav a.active {
+    font-weight: bold;
+  }
+
+  nav ul li {
+    margin: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(219, 219, 219);
+    font-weight: bold;
+    margin: 50px;
+    transition: 200ms;
+}
+
+nav a:hover{
+    color: #ffffff;
+    text-shadow: 0 0 5px white;
+}
+
+section{
+    padding: 55px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.main_page_title{
+    display: flex;
+    justify-content: center;
+    font-size: 70px;
+}
+
+.main_title{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    color: #772b31;
+}
+
+.main_text{
+    max-width: 1000px;
+    font-size: 35px;
+    font-weight: 700;
+    padding-right: 85px;
+}
+
+.main_img{
+    border-radius: 20px;
+}
+
+.singers_title{
+    padding: 20px;
+    margin: 20px;
+    border-bottom: 2px solid #772b31;
+    color: #000000;
+    text-align: center;
+    font-size: 44px;
+}
+
+.singers_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.singer_crard {
+    width: 270px;
+    padding: 50px;
+    margin: 75px;
+    box-shadow: 10px 40px 50px rgba(221, 221, 221, 0.11);
+    border-radius: 20px;
+    background-color: #823639;
+    background-image: url("https://www.transparenttextures.com/patterns/stressed-linen.png");
+    transition: 200ms;
+}
+
+.card_image{
+    display: flex;
+    align-items: center;
+    width: 270px;
+    height: 359.86px;
+    border-radius: 20px;
+}
+
+.singer_crard h3{
+    color: rgb(219, 219, 219);
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.singer_crard p{
+    color: rgb(219, 219, 219);
+    font-size: 20px;
+}
+
+.singer_crard:hover{
+    background-color: #6b1c1c;
+    background-image: url("https://www.transparenttextures.com/patterns/stressed-linen.png");
+    box-shadow: 0 0 25px rgba(17, 17, 17, 0.5);
+}
+
+.player{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    padding-top: 35px;
+    padding-left: 0;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #772b31;
+    color: #000000;
+    text-align: center;
+    font-size: 25px;
+}
+
+.player_content{
+    background-color: rgb(219, 219, 219);
+    border-radius: 10px;
+    max-width: 268px;
+    width: 100%;
+    padding: 25px;
+    margin-top: 38px;
+}
+
+.cover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0;
+    .cover_img{
+            &.active {
+                animation: rotateAnimation 3s linear infinite;
+            }
+    }
+}
+
+.song{
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 28px;
+    color: #772b31;
+    text-align: center;
+    margin-top: 38px;
+}
+
+.content_progress{
+    background-color: rgb(192, 192, 192);
+    border-radius: 5px;
+    width: 100%;
+    height: 10px;
+    margin-top: 65px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    .progress{
+        background-color: #772b31;
+        border-radius: 5px;
+        height: 6px;
+        /*width: 150px; Изначально использовалось как ориентир для дальнейших настроек*/
+    }
+}
+
+.content_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45px;
+    .btn{
+        cursor: pointer;
+    }
+}
+
+.player_info{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+.info_button {
+    margin-top: 28px;
+    display: inline-block;
+    padding: 1.1rem 3.3rem;
+    background-color: #772b31;
+    color: rgb(192, 192, 192);
+    border-radius: 55px;
+    text-decoration: none;
+    transition: 300ms;
+}
+
+.title {
+    padding-top: 35px;
+    padding-left: 0;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #772b31;
+    color: #000000;
+    text-align: center;
+    font-size: 25px;
+    text-align: center;
+}
+
+.info_button:hover{
+    background-color: #5e2328;
+    text-shadow: 0 0 5px white;
+}
+
+.page_contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contact_list {
+    font-size: 32px;
+    padding: 0.6rem;
+    margin: 10px;
+    margin-top: 48px;
+    max-width: 432px;
+}
+
+.desc{
+    margin-left: 35px;
+}
+
+.contact_list p {
+    font-weight: bold;
+    padding: 1.1rem 0;
+}
+
+.contact_list ul {
+    list-style: none;
+    transition: 300ms;
+}
+
+.contact_list ul li a {
+    color: rgb(192, 192, 192);
+    display: block;
+    padding: 14px 20px;
+    padding-left: 0;
+    text-decoration: none;
+    
+}
+
+.contact_list ul a:hover{
+    text-decoration: underline;
+}
+
+footer {
+    padding: 56px;
+    background: linear-gradient(180deg, #772b31 0%, #5e2328 80%);
+    color: rgb(192, 192, 192);
+    font-weight: 300;
+    font-size: 28px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.footer_left {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+.footer_left p {
+    margin: 20px 0;
+}
+
+.footer_logo {
+    display: flex;
+    align-items: center;
+    text-indent: 10px;
+}
+
+.footer_right {
+    display: flex;
+}
+
+.footer_list {
+    padding: 0.6rem;
+    margin: 10px;
+}
+
+.footer_list p {
+    font-weight: bold;
+    padding: 1.1rem 0;
+}
+
+.footer_list ul {
+    list-style: none;
+    transition: 300ms;
+}
+
+.footer_list ul li a {
+    color: rgb(192, 192, 192);
+    display: block;
+    padding: 0.8rem 1.1rem;
+    padding-left: 0;
+    text-decoration: none;
+    
+}
+
+.footer_list ul a:hover{
+    text-decoration: underline;
+}
+
+@keyframes rotateAnimation{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width:970px){
+    nav ul{
+        flex-direction: column;
+        text-align:center ;
+    }
+    img{
+        width: 250px;
+    }
+}
